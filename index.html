@@ -3,85 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNBLOCKED GAMES PORTAL</title>
+    <title>UNBLOCKED PORTAL</title>
     <style>
+        /* Professional Dark-Mode GUI */
         body { 
-            background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%);
+            background: radial-gradient(circle at center, #1b2735 0%, #08090a 100%);
             color: #ffffff; 
             text-align: center; 
-            font-family: 'Inter', sans-serif; 
+            font-family: 'Inter', system-ui, -apple-system, sans-serif; 
             margin: 0; 
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
+            height: 100vh;
             overflow: hidden;
         }
 
         h1 { 
-            font-size: 45px;
-            letter-spacing: 5px;
-            margin-bottom: 20px;
-            background: linear-gradient(to bottom, #fff, #00ffcc);
+            font-size: 48px;
+            letter-spacing: 8px;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, #fff, #00ffcc, #fff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-transform: uppercase;
-            filter: drop-shadow(0 0 15px rgba(0, 255, 204, 0.6));
+            filter: drop-shadow(0 0 20px rgba(0, 255, 204, 0.4));
         }
 
-        .game-wrapper {
+        /* The Crazy GUI Container */
+        .game-frame {
             background: rgba(22, 27, 34, 0.9);
-            backdrop-filter: blur(15px);
+            backdrop-filter: blur(20px);
             border: 2px solid #00ffcc;
-            border-radius: 20px;
-            padding: 10px;
-            box-shadow: 0 0 50px rgba(0, 255, 204, 0.2);
-            width: 90vw;
-            max-width: 960px;
+            border-radius: 24px;
+            padding: 12px;
+            box-shadow: 0 0 80px rgba(0, 255, 204, 0.15), inset 0 0 15px rgba(0, 255, 204, 0.05);
+            width: 92vw;
+            max-width: 1000px;
         }
 
         iframe {
             width: 100%;
             aspect-ratio: 16 / 9;
-            border-radius: 12px;
-            border: 1px solid #333;
+            border-radius: 16px;
+            border: 1px solid #222;
             background: #000;
         }
 
-        .gui-footer {
+        /* Dashboard Bottom Bar */
+        .dashboard {
             margin-top: 15px;
             display: flex;
             justify-content: space-around;
             padding: 5px;
         }
 
-        .status-pill {
-            border: 1px solid #00ffcc;
-            color: #00ffcc;
-            padding: 5px 15px;
-            border-radius: 50px;
+        .status-light {
             font-size: 11px;
-            text-transform: uppercase;
+            color: #00ffcc;
             font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .blink {
+            width: 8px;
+            height: 8px;
+            background: #00ffcc;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 255, 204, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(0, 255, 204, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 255, 204, 0); }
         }
     </style>
 </head>
 <body>
 
-    <h1>UNBLOCKED GAMES</h1>
+    <h1>UNBLOCKED</h1>
 
-    <div class="game-wrapper">
+    <div class="game-frame">
         <iframe 
-            src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/cdn.mathgames.com/snow-rider-3d/index.html" 
+            src="https://itsvijaysingh.github.io/Snow-Rider3D/" 
             sandbox="allow-scripts allow-same-origin allow-forms"
             allowfullscreen="true">
         </iframe>
         
-        <div class="gui-footer">
-            <div class="status-pill">Mirror: Active</div>
-            <div class="status-pill">Anti-Popup: ON</div>
-            <div class="status-pill">Verified Proxy</div>
+        <div class="dashboard">
+            <div class="status-light"><span class="blink"></span> System: Active</div>
+            <div class="status-light" style="color:#888;">Proxy: Encrypted</div>
+            <div class="status-light">Mirror 1.0</div>
         </div>
     </div>
 
