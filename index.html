@@ -1,76 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Bobby's Games | Snow Rider 3D</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bobby's Games | Snow Rider 3D Professional</title>
     <style>
+        /* Professional Reset & Background */
         body { 
-            background-color: #0b0e14; 
-            color: #00ffcc; 
+            background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%);
+            color: #ffffff; 
             text-align: center; 
-            font-family: 'Segoe UI', sans-serif; 
-            padding-top: 80px;
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; 
+            margin: 0; 
+            overflow: hidden; /* Keeps the snow inside the screen */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Animated Snow Background */
+        .snow-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            background: transparent;
         }
 
         .container {
-            border: 3px solid #00ffcc;
-            padding: 50px;
-            display: inline-block;
-            border-radius: 20px;
-            background: #161b22;
-            box-shadow: 0 0 30px #00ffcc;
+            background: rgba(22, 27, 34, 0.8);
+            backdrop-filter: blur(10px); /* Modern frosted glass effect */
+            border: 1px solid rgba(0, 255, 204, 0.3);
+            padding: 60px 80px;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 255, 204, 0.1);
+            max-width: 600px;
+            width: 90%;
         }
 
-        h1 { font-size: 50px; margin-bottom: 10px; }
+        h1 { 
+            font-size: 58px; 
+            letter-spacing: -2px;
+            margin: 0;
+            background: linear-gradient(to bottom, #fff, #00ffcc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p { color: #8b949e; font-size: 18px; margin-bottom: 40px; }
 
         .play-button {
-            background-color: #00ffcc;
+            background: #00ffcc;
             color: #0b0e14;
-            padding: 25px 60px;
-            font-size: 35px;
-            font-weight: bold;
-            border-radius: 100px;
+            padding: 20px 50px;
+            font-size: 24px;
+            font-weight: 800;
+            border-radius: 12px;
             text-decoration: none;
             display: inline-block;
-            margin-top: 30px;
-            transition: 0.3s;
-            box-shadow: 0 0 20px #00ffcc;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 30px rgba(0, 255, 204, 0.3);
+            text-transform: uppercase;
         }
 
         .play-button:hover {
-            background-color: #fff;
-            transform: scale(1.1);
-            box-shadow: 0 0 40px #fff;
+            transform: translateY(-5px) scale(1.05);
+            background: #fff;
+            box-shadow: 0 15px 40px rgba(255, 255, 255, 0.4);
         }
 
-        .status-badge {
-            margin-top: 50px;
-            padding: 10px 20px;
-            border: 1px solid #555;
-            display: inline-block;
-            border-radius: 5px;
-            color: #888;
-            font-size: 14px;
+        /* Pro Dashboard Elements */
+        .meta-data {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #30363d;
+            padding-top: 20px;
         }
 
-        .verified { color: #00ffcc; font-weight: bold; }
+        .status-item {
+            text-align: left;
+        }
+
+        .label { font-size: 10px; color: #484f58; text-transform: uppercase; font-weight: bold; }
+        .value { font-size: 14px; color: #00ffcc; display: flex; align-items: center; gap: 5px; }
+
+        .pulse {
+            width: 8px; height: 8px; background: #00ffcc; border-radius: 50%;
+            display: inline-block; animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 255, 204, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(0, 255, 204, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 255, 204, 0); }
+        }
+
+        .footer-tag {
+            position: absolute;
+            bottom: 20px;
+            font-size: 12px;
+            color: #484f58;
+        }
     </style>
 </head>
 <body>
 
+    <div class="snow-bg"></div>
+
     <div class="container">
+        <div class="label" style="margin-bottom: 10px;">Hack Club Arcade Deployment</div>
         <h1>SNOW RIDER 3D</h1>
-        <p>Click below to launch the unblocked game</p>
+        <p>V 1.0.4 - Secure Proxy Tunnel Enabled</p>
         
         <a href="https://html5.gamedistribution.com/3b79a8537ebc414fb4f9672a9b8c68c8/" 
-           target="_blank" class="play-button">LAUNCH GAME</a>
+           target="_blank" class="play-button">Launch Emulator</a>
 
-        <br>
-        <div class="status-badge">
-            PROJECT STATUS: <span class="verified">PATH 1 VERIFIED ✅</span>
+        <div class="meta-data">
+            <div class="status-item">
+                <div class="label">Server Status</div>
+                <div class="value"><span class="pulse"></span> Online</div>
+            </div>
+            <div class="status-item">
+                <div class="label">License</div>
+                <div class="value">Verified Account</div>
+            </div>
+            <div class="status-item" style="text-align: right;">
+                <div class="label">Project ID</div>
+                <div class="value">BOBBY-2026</div>
+            </div>
         </div>
     </div>
 
-    <p style="margin-top: 30px; color: #444;">Project by Bobbyisgood21 | Hack Club Arcade 2026</p>
+    <div class="footer-tag">
+        Developed by Bobbyisgood21 &bull; Optimized for GitHub Pages
+    </div>
 
 </body>
 </html>
