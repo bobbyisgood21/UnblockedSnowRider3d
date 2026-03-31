@@ -4,38 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Snow Rider 3D Unblocked - Play Free on Chromebook | Unblocked Games 66, 76, 911</title>
+    <title>Snow Rider 3D Unblocked - Bobby's Games | 66, 76, 911</title>
     
-    <meta name="description" content="Play Snow Rider 3D unblocked for free. High-speed winter racing game perfect for school or work. No downloads required, fast loading, and mobile friendly. Works on Chromebook, PC, and Mobile. Optimized for Unblocked Games 66, 76, and Classroom 6x.">
-    
-    <meta name="keywords" content="Snow Rider 3D, Snow Rider 3D Unblocked, Unblocked Games, Chromebook Games, Bobby's Games, Free Online Games, Unblocked Games 66, Unblocked Games 76, Unblocked Games 911, Classroom 6x, Unblocked Games WTF, Tyrone's Unblocked Games, Google Sites Games, Snow Rider 3D GitHub, Winter Games Unblocked, School Games, Games for School, Snow Rider 3D Fullscreen, Snow Rider 3D No Flash, Snow Rider 3D HTML5">
-    
-    <meta property="og:title" content="Snow Rider 3D Unblocked Portal - Best School Games">
-    <meta property="og:description" content="The ultimate destination for unblocked winter racing. Play now on any network! No blocks, no lag.">
-    <meta property="og:url" content="https://bobbyisgood21.github.io/snow/">
-    <meta property="og:type" content="website">
+    <meta name="description" content="Play Snow Rider 3D unblocked for free. Optimized for Chromebook, PC, and Mobile. Optimized for Unblocked Games 66, 76, and Classroom 6x.">
+    <meta name="keywords" content="Snow Rider 3D, Snow Rider 3D Unblocked, Unblocked Games, Chromebook Games, Bobby's Games, Unblocked Games 66, Unblocked Games 76, Unblocked Games 911">
 
     <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "SoftwareApplication",
-      "name": "Snow Rider 3D Unblocked",
-      "operatingSystem": "Web",
-      "applicationCategory": "GameApplication",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "1250"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
-    }
-    </script>
 
     <style>
         /* Professional Dark-Mode GUI */
@@ -50,35 +24,33 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            overflow-x: hidden;
+            overflow: hidden; /* Stops double scrollbars */
         }
 
         h1 { 
-            font-size: clamp(24px, 8vw, 48px);
+            font-size: clamp(24px, 6vw, 42px);
             letter-spacing: 4px;
-            margin: 20px 0;
+            margin: 15px 0;
             background: linear-gradient(to right, #fff, #00ffcc, #fff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-transform: uppercase;
-            filter: drop-shadow(0 0 20px rgba(0, 255, 204, 0.4));
         }
 
+        /* FIXED SIZING: The Container holds the ads and the game */
         .game-frame {
             position: relative;
             background: rgba(22, 27, 34, 0.9);
             backdrop-filter: blur(20px);
             border: 2px solid #00ffcc;
             border-radius: 24px;
-            padding: 12px;
-            box-shadow: 0 0 80px rgba(0, 255, 204, 0.15);
+            padding: 10px;
             width: 95vw;
             max-width: 1000px;
-            margin-bottom: 20px;
-            transition: all 0.3s ease;
+            box-sizing: border-box;
         }
 
-        /* Container Fullscreen Logic - THIS KEEPS ADS VISIBLE */
+        /* FULLSCREEN SIZING FIX */
         .game-frame:fullscreen {
             width: 100vw;
             height: 100vh;
@@ -88,7 +60,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background: #000;
         }
 
         iframe {
@@ -104,62 +75,35 @@
             background: #00ffcc;
             color: #08090a;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 24px;
             border-radius: 12px;
             font-weight: bold;
             cursor: pointer;
-            margin-top: 15px;
-            transition: 0.3s;
+            margin-top: 10px;
             text-transform: uppercase;
-            font-size: 12px;
-            letter-spacing: 1px;
-            z-index: 1000;
+            font-size: 14px;
+            transition: 0.3s;
         }
 
-        .fs-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 15px #00ffcc;
-        }
+        .fs-btn:hover { transform: scale(1.05); box-shadow: 0 0 15px #00ffcc; }
 
         .dashboard {
-            margin-top: 15px;
+            margin-top: 10px;
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-around;
             gap: 10px;
-            padding: 5px;
         }
 
-        .status-light {
-            font-size: 10px;
-            color: #00ffcc;
-            font-weight: bold;
-            text-transform: uppercase;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .blink {
-            width: 8px;
-            height: 8px;
-            background: #00ffcc;
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(0, 255, 204, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(0, 255, 204, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(0, 255, 204, 0); }
-        }
+        .status-light { font-size: 10px; color: #00ffcc; font-weight: bold; display: flex; align-items: center; gap: 6px; }
+        .blink { width: 8px; height: 8px; background: #00ffcc; border-radius: 50%; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(0, 255, 204, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(0, 255, 204, 0); } 100% { box-shadow: 0 0 0 0 rgba(0, 255, 204, 0); } }
     </style>
 </head>
 <body>
 
     <h1>Snow Rider 3D</h1>
 
-    <div class="game-frame" id="container">
+    <div class="game-frame" id="main-container">
         
         <script type="text/javascript">
             aclib.runInPagePush({
@@ -187,15 +131,16 @@
 
     <script>
         function openFullscreen() {
-          // We target the 'container' div so the Ad stays visible over the game
-          var elem = document.getElementById("container");
-          if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-          } else if (elem.webkitRequestFullscreen) {
-            elem.webkitRequestFullscreen();
-          } else if (elem.msRequestFullscreen) {
-            elem.msRequestFullscreen();
-          }
+            // We request fullscreen on the CONTAINER, not the iframe. 
+            // This ensures your Adcash pop-up stays visible over the game.
+            var elem = document.getElementById("main-container");
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) {
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+                elem.msRequestFullscreen();
+            }
         }
     </script>
 
@@ -206,7 +151,7 @@
                 s.type = 'text/javascript';
                 s.src = 'https://pl29014139.profitablecpmratenetwork.com/04/14/6f/04146f7d047b020915c42edc3f2cef22.js';
                 document.body.appendChild(s);
-            }, 2000);
+            }, 2500); // Loads 2.5s after page start to avoid lag
         };
     </script>
 
